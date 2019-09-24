@@ -26,6 +26,11 @@ class viewsControlersb
 
         $respuesta = EnlacesModelsB::enlacesModels($enlaces);
 
+        if(!$respuesta){
+            echo "Página no existe";
+            return false;
+        }
+
         include $respuesta;
 
     }

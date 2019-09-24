@@ -3,7 +3,10 @@ class EnlacesModelsB{
 
     public function enlacesModels($enlaces){
 
-        if($enlaces == "home" ||
+        if($enlaces == "inicio" ||
+            $enlaces == "registrarAsociado" ||
+            
+            $enlaces == "home" ||
             $enlaces == "ingreso" ||
             $enlaces == "productos" ||
             $enlaces == "servicios" ||
@@ -25,7 +28,8 @@ class EnlacesModelsB{
         }
 
         else{
-            $module = "views/modules/ingreso.php";
+            $module = false;
+            //$module = "views/modules/ingreso.php";
         }
 
         return $module;
